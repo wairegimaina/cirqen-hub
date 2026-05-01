@@ -1,4 +1,0 @@
-flask
-flask-admin
-flask-sqlalchemy
-dotenv
