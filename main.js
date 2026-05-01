@@ -346,19 +346,40 @@ function setupContactForm() {
     btn.textContent = 'Sending...';
     btn.disabled = true;
 
-    await new Promise(r => setTimeout(r, 1200));
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name:    form.querySelector('[name="name"]').value,
+          email:   form.querySelector('[name="email"]').value,
+          message: form.querySelector('[name="message"]').value,
+        }),
+      });
 
-    btn.textContent = '✓ Message Sent';
-    btn.style.background = 'linear-gradient(135deg, #2a2a2a, #1a1a1a)';
-    btn.style.borderColor = 'var(--chrome)';
+      if (!response.ok) throw new Error('Server error');
 
-    setTimeout(() => {
-      btn.textContent = orig;
-      btn.disabled = false;
-      btn.style.background = '';
-      btn.style.borderColor = '';
-      form.reset();
-    }, 3000);
+      btn.textContent = '✓ Message Sent';
+      btn.style.background = 'linear-gradient(135deg, #2a2a2a, #1a1a1a)';
+      btn.style.borderColor = 'var(--chrome)';
+
+      setTimeout(() => {
+        btn.textContent = orig;
+        btn.disabled = false;
+        btn.style.background = '';
+        btn.style.borderColor = '';
+        form.reset();
+      }, 3000);
+
+    } catch (err) {
+      btn.textContent = '✗ Failed – try again';
+      btn.style.borderColor = '#c0392b';
+      setTimeout(() => {
+        btn.textContent = orig;
+        btn.disabled = false;
+        btn.style.borderColor = '';
+      }, 3000);
+    }
   });
 }
 
