@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cirqen — Engineering Healthcare</title>
+    <meta name="description"
+      content="Cirqen integrates precision biomedical calibration, computational oncology research, and healthcare analytics for safer, smarter treatments.">
+    <link rel="stylesheet" href="styles.css">
+    <!-- ── Favicons & PWA ── -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="icons/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="icons/favicon-512x512.png">
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#156a3c">
+    <meta name="msapplication-TileColor" content="#156a3c">
+    <meta name="msapplication-TileImage" content="icons/favicon-144x144.png">
+    <meta name="msapplication-config" content="none">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap"
+      rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- ── Custom Cursor ── -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- ── Scroll Progress ── -->
+    <div id="scroll-progress"></div>
+
+    <!-- ── Section Dots ── -->
+    <nav id="section-dots" aria-label="Page sections"></nav>
+
+    <!-- ══════════════════════════════════════════════
+     NAVIGATION
+══════════════════════════════════════════════ -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#home" class="logo">
+            <img src="header.svg" alt="Cirqen Labs" class="logo-img">
+          </a>
+
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#pillars" class="nav-link">Pillars</a></li>
+            <li><a href="#biomedical" class="nav-link">Biomedical</a></li>
+            <li><a href="#computational" class="nav-link">Computational</a></li>
+            <li><a href="#analytics" class="nav-link">Analytics</a></li>
+            <li><a href="#platform" class="nav-link">Platform</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#contact" class="btn-cta">Get Started</a></li>
+          </ul>
+
+          <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- ══════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════ -->
+    <section class="hero" id="home" data-section="Home">
+      <div class="hero-bg">
+        <div class="grid-overlay"></div>
+        <div class="gradient-sphere" style="top:10%;left:15%;"></div>
+        <div class="gradient-sphere" style="bottom:20%;right:10%;"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-single">
+          <!-- Left: Text -->
+          <div class="hero-content">
+            <div class="hero-badge" data-aos="fade">
+              <span class="status-indicator"></span>
+              <span>Advanced HealthTech Innovation</span>
+            </div>
+
+            <h1 class="hero-title" data-aos="fade-up">
+              <span class="title-line reveal-line">Engineering</span>
+              <span class="title-line title-accent reveal-line">Healthcare</span>
+            </h1>
+
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">
+              Integrating precision biomedical calibration, computational oncology research,
+              and healthcare analytics for safer, smarter, more effective treatments.
+            </p>
+
+            <div class="hero-actions" data-aos="fade-up" data-aos-delay="200">
+              <a href="#contact" class="btn btn-primary">Request a Demo</a>
+              <a href="#pillars" class="btn btn-ghost">Explore Platform</a>
+            </div>
+
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="300">
+              <div class="stat-item">
+                <div class="stat-value" data-target="99.9">0</div>
+                <div class="stat-label">% Calibration Precision</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value" data-target="50000">0</div>
+                <div class="stat-label">+ Devices Managed</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value" data-target="15">0</div>
+                <div class="stat-label">M+ Simulations Run</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: 3D MRI Scene -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Marquee Strip ── -->
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Biomedical Calibration</span><span class="marquee-dot">·</span>
+        <span>Computational Oncology</span><span class="marquee-dot">·</span>
+        <span>Healthcare Analytics</span><span class="marquee-dot">·</span>
+        <span>ISO/IEC Compliance</span><span class="marquee-dot">·</span>
+        <span>Monte Carlo Simulations</span><span class="marquee-dot">·</span>
+        <span>Predictive Maintenance</span><span class="marquee-dot">·</span>
+        <span>Patient Safety</span><span class="marquee-dot">·</span>
+        <span>Biomedical Calibration</span><span class="marquee-dot">·</span>
+        <span>Computational Oncology</span><span class="marquee-dot">·</span>
+        <span>Healthcare Analytics</span><span class="marquee-dot">·</span>
+        <span>ISO/IEC Compliance</span><span class="marquee-dot">·</span>
+        <span>Monte Carlo Simulations</span><span class="marquee-dot">·</span>
+        <span>Predictive Maintenance</span><span class="marquee-dot">·</span>
+        <span>Patient Safety</span><span class="marquee-dot">·</span>
+      </div>
+    </div>
+    <section class="pillars" id="pillars" data-section="Pillars">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Core Pillars</span>
+          <h2 class="section-title">Three Integrated Healthcare Technologies</h2>
+          <p class="section-desc">
+            From biomedical precision to computational research — our platform powers the future of healthcare.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <!-- 01 -->
+          <div class="pillar-card">
+            <div class="pillar-header">
+              <div class="pillar-number">01</div>
+              <div class="pillar-icon">
+                <svg width="32" height="32" viewBox="0 0 48 48" fill="none">
+                  <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2" opacity="0.2" />
+                  <path d="M24 12V24L30 28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+                  <circle cx="24" cy="24" r="3" fill="currentColor" />
+                  <circle cx="24" cy="12" r="2" fill="currentColor" opacity="0.6" />
+                  <circle cx="36" cy="24" r="2" fill="currentColor" opacity="0.6" />
+                  <circle cx="24" cy="36" r="2" fill="currentColor" opacity="0.6" />
+                  <circle cx="12" cy="24" r="2" fill="currentColor" opacity="0.6" />
+                </svg>
+              </div>
+            </div>
+            <h3>Biomedical Systems</h3>
+            <p class="pillar-desc">Precision calibration, monitoring, and inventory management of medical devices
+              ensuring trusted reliability for hospitals and laboratories.</p>
+            <ul class="pillar-features">
+              <li>Automated calibration scheduling</li>
+              <li>Real-time device monitoring</li>
+              <li>Equipment lifecycle tracking</li>
+              <li>ISO/IEC compliance management</li>
+            </ul>
+            <a href="#biomedical" class="pillar-link">
+              Explore Biomedical
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- 02 -->
+          <div class="pillar-card pillar-highlight">
+            <div class="pillar-header">
+              <div class="pillar-number">02</div>
+              <div class="pillar-icon">
+                <svg width="32" height="32" viewBox="0 0 48 48" fill="none">
+                  <path d="M24 8V16M24 32V40M40 24H32M16 24H8" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" />
+                  <circle cx="24" cy="24" r="4" fill="currentColor" />
+                  <path d="M18 18L20 20M28 28L30 30M30 18L28 20M20 28L18 30" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" />
+                  <circle cx="24" cy="24" r="12" stroke="currentColor" stroke-width="1.5" opacity="0.2" />
+                </svg>
+              </div>
+            </div>
+            <h3>Computational Health & Oncology Research</h3>
+            <p class="pillar-desc">Advanced simulations and modeling for radiotherapy, drug delivery, and personalized
+              treatment planning using computational physics.</p>
+            <ul class="pillar-features">
+              <li>Monte Carlo radiation transport</li>
+              <li>Treatment plan optimization</li>
+              <li>Drug pharmacokinetics modeling</li>
+              <li>Patient-specific dosimetry</li>
+            </ul>
+            <a href="#computational" class="pillar-link">
+              Explore Computational
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- 03 -->
+          <div class="pillar-card">
+            <div class="pillar-header">
+              <div class="pillar-number">03</div>
+              <div class="pillar-icon">
+                <svg width="32" height="32" viewBox="0 0 48 48" fill="none">
+                  <rect x="8" y="28" width="6" height="12" stroke="currentColor" stroke-width="2" opacity="0.3" />
+                  <rect x="16" y="20" width="6" height="20" stroke="currentColor" stroke-width="2" opacity="0.5" />
+                  <rect x="24" y="12" width="6" height="28" stroke="currentColor" stroke-width="2" opacity="0.7" />
+                  <rect x="32" y="16" width="6" height="24" stroke="currentColor" stroke-width="2" />
+                  <path d="M8 12L16 18L24 8L40 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+            <h3>Healthcare Analytics & Innovation</h3>
+            <p class="pillar-desc">Data-driven insights transforming medical device performance, clinical workflows, and
+              population health outcomes into actionable intelligence.</p>
+            <ul class="pillar-features">
+              <li>Predictive maintenance analytics</li>
+              <li>Clinical outcome tracking</li>
+              <li>Resource optimization dashboards</li>
+              <li>Real-time performance metrics</li>
+            </ul>
+            <a href="#analytics" class="pillar-link">
+              Explore Analytics
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="pillar-separator"></div>
+
+
+    <!-- ══════════════════════════════════════════════
+     PILLAR 01 — BIOMEDICAL SYSTEMS
+══════════════════════════════════════════════ -->
+    <section class="pillar-detail" id="biomedical" data-section="Biomedical">
+      <div class="container">
+
+        <div class="pillar-detail-hero" data-num="01">
+          <div class="pillar-tag" data-aos="fade">
+            <span class="pillar-num-badge">01</span>
+            <span class="pillar-tag-text">Biomedical Systems</span>
+          </div>
+          <h2 class="pillar-detail-title" data-aos="fade-up">
+            Precision Engineering<br>for <span class="title-accent">Healthcare</span>
+          </h2>
+          <p class="pillar-detail-sub" data-aos="fade-up" data-aos-delay="100">
+            Intelligent infrastructure ensuring medical equipment reliability, safety, and regulatory compliance across
+            healthcare facilities.
+          </p>
+        </div>
+
+        <!-- 3D Device Simulation -->
+
+        <!-- Overview -->
+        <div class="section-overview" data-aos="fade-up">
+          <div class="overview-inner">
+            <div class="overview-label">Overview</div>
+            <p class="overview-text">
+              We combine engineering precision, automation, and data-driven maintenance to reduce downtime, extend asset
+              life, and improve patient safety. Our biomedical platform serves as the operational backbone for
+              equipment-dependent healthcare facilities.
+            </p>
+          </div>
+        </div>
+
+        <!-- Medical Equipment Image Gallery -->
+
+        <!-- Core Solutions -->
+      </div>
+      <p>A centralized platform for managing biomedical assets throughout their full lifecycle — from registration to
+        decommission.</p>
+      <div class="solution-grid">
+        <div class="solution-feature">Asset registration & classification (imaging, ICU, radiotherapy)</div>
+        <div class="solution-feature">Preventive & corrective maintenance scheduling</div>
+        <div class="solution-feature">Automated work orders & technician assignment</div>
+        <div class="solution-feature">Spare parts and inventory tracking</div>
+        <div class="solution-feature">Downtime analysis & failure trend monitoring</div>
+        <div class="solution-feature">Compliance-ready records (ISO, IEC, WHO, audits)</div>
+      </div>
+      <div class="solution-impact">
+        <h5>Impact</h5>
+        <p>Reduced equipment downtime · Improved technician efficiency · Full traceability for audits and accreditation
+        </p>
+      </div>
+      </div>
+
+      <div class="solution-card" data-aos="fade-up">
+        <div class="solution-header">
+          <div class="solution-num">02</div>
+          <h3>Calibration & Quality Assurance System</h3>
+        </div>
+        <p>A digital calibration management system designed for precision-critical medical devices, enabling traceable,
+          audit-ready records.</p>
+        <div class="solution-grid">
+          <div class="solution-feature">Calibration scheduling and reminders</div>
+          <div class="solution-feature">Digital calibration certificates & traceability</div>
+          <div class="solution-feature">Measurement uncertainty tracking</div>
+          <div class="solution-feature">Instrument reference hierarchy (master → working standards)</div>
+          <div class="solution-feature">Compliance with ISO 17025 & hospital QA requirements</div>
+          <div class="solution-feature">Drift analysis and out-of-tolerance alerts</div>
+        </div>
+        <div class="solution-impact">
+          <h5>Impact</h5>
+          <p>Accurate diagnostics and treatments · Reduced clinical risk · Strong regulatory compliance</p>
+        </div>
+      </div>
+
+      </div>
+
+      <!-- Calibration Imagery -->
+
+      <!-- Who It Serves -->
+      <div class="subsection-label" data-aos="fade-up">
+        <h3>Who It Serves</h3>
+      </div>
+
+      <div class="serves-grid">
+        <div class="serves-card"><span class="serves-emoji">🏥</span>
+          <h4>Hospitals & Clinics</h4>
+          <p>Complete asset lifecycle management</p>
+        </div>
+        <div class="serves-card"><span class="serves-emoji">🔬</span>
+          <h4>Diagnostic Centers</h4>
+          <p>Precision calibration systems</p>
+        </div>
+        <div class="serves-card"><span class="serves-emoji">🧪</span>
+          <h4>Research Labs</h4>
+          <p>Advanced quality assurance</p>
+        </div>
+        <div class="serves-card"><span class="serves-emoji">⚕️</span>
+          <h4>Equipment Vendors</h4>
+          <p>Service management platforms</p>
+        </div>
+      </div>
+
+      <div class="cta-strip" data-aos="fade-up">
+        <div>
+          <h3>Ready to Optimize Your Biomedical Systems?</h3>
+          <p>Let's discuss how our solutions can improve your equipment reliability and compliance.</p>
+        </div>
+        <a href="#contact" class="btn btn-primary" style="white-space:nowrap;">Get Started</a>
+      </div>
+
+      </div>
+    </section>
+
+    <div class="pillar-separator"></div>
+
+
+    <!-- ══════════════════════════════════════════════
+     PILLAR 02 — COMPUTATIONAL HEALTH
+══════════════════════════════════════════════ -->
+    <section class="pillar-detail" id="computational" data-section="Computational"
+      style="background:var(--bg-surface);">
+      <div class="container">
+
+        <div class="pillar-detail-hero" data-num="02">
+          <div class="pillar-tag" data-aos="fade">
+            <span class="pillar-num-badge">02</span>
+            <span class="pillar-tag-text">Computational Health</span>
+          </div>
+          <h2 class="pillar-detail-title" data-aos="fade-up">
+            Bridging Physics, Biology<br>& <span class="title-accent">Data Science</span>
+          </h2>
+          <p class="pillar-detail-sub" data-aos="fade-up" data-aos-delay="100">
+            Applying advanced computation, modeling, and AI to improve disease understanding, diagnosis, and treatment —
+            particularly in oncology.
+          </p>
+        </div>
+
+        <!-- 3D DNA + Monte Carlo Simulation -->
+
+        <!-- Overview -->
+        <div class="section-overview" data-aos="fade-up">
+          <div class="overview-inner">
+            <div class="overview-label">Overview</div>
+            <p class="overview-text">
+              We bridge physics, biology, and data science to support evidence-based and precision medicine. Our
+              computational research transforms cancer treatment planning and drug delivery optimization, enabling
+              clinicians to make more confident decisions with quantitative backing.
+            </p>
+          </div>
+        </div>
+
+        <!-- Cancer Cell Video + Oncology Imagery -->
+
+        <!-- Oncology Research Imagery -->
+
+        <!-- Key Focus Areas -->
+        <div class="subsection-label" data-aos="fade-up">
+          <h3>Key Focus Areas</h3>
+        </div>
+
+        <div class="solution-stack">
+
+          <div class="solution-card" data-aos="fade-up">
+            <div class="solution-header">
+              <div class="solution-num">01</div>
+              <h3>Oncology Research & Modeling</h3>
+            </div>
+            <p>Using mathematical models and machine learning to analyze cancer behavior and treatment outcomes across
+              diverse patient populations.</p>
+            <div class="solution-grid">
+              <div class="solution-feature">Tumor growth and response modeling</div>
+              <div class="solution-feature">Radiotherapy dose optimization and simulation</div>
+              <div class="solution-feature">Predictive modeling for treatment outcomes</div>
+              <div class="solution-feature">Personalized treatment planning using patient data</div>
+              <div class="solution-feature">Multi-modal imaging data integration</div>
+              <div class="solution-feature">Clinical trial virtual arms & digital twin models</div>
+            </div>
+          </div>
+
+          <div class="solution-card" data-aos="fade-up">
+            <div class="solution-header">
+              <div class="solution-num">02</div>
+              <h3>Medical Physics & Simulation</h3>
+            </div>
+            <p>Physics-based computational tools supporting clinical and research environments with high-fidelity
+              radiation modeling.</p>
+            <div class="solution-grid">
+              <div class="solution-feature">Monte Carlo simulations for radiation transport</div>
+              <div class="solution-feature">Imaging system performance modeling</div>
+              <div class="solution-feature">Dosimetry analysis and verification</div>
+              <div class="solution-feature">Optimization of imaging and therapy protocols</div>
+              <div class="solution-feature">Beam quality factor validation</div>
+              <div class="solution-feature">LINAC output calibration modeling</div>
+            </div>
+          </div>
+
+          <div class="solution-card" data-aos="fade-up">
+            <div class="solution-header">
+              <div class="solution-num">03</div>
+              <h3>AI-Driven Clinical Insights</h3>
+            </div>
+            <p>Transforming complex medical data into actionable intelligence through machine learning pipelines and
+              decision support systems.</p>
+            <div class="solution-grid">
+              <div class="solution-feature">Machine learning for pattern recognition</div>
+              <div class="solution-feature">Predictive analytics for disease progression</div>
+              <div class="solution-feature">Clinical decision support systems</div>
+              <div class="solution-feature">Research-grade data pipelines</div>
+              <div class="solution-feature">NLP for clinical notes extraction</div>
+              <div class="solution-feature">Federated learning for multi-site research</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Clinical Impact -->
+        <div class="subsection-label" data-aos="fade-up">
+          <h3>Clinical Impact</h3>
+        </div>
+
+        <div class="impact-grid">
+          <div class="impact-card"><span class="impact-emoji">🎯</span>
+            <h4>Precision Treatments</h4>
+            <p>More precise cancer treatments tailored to individual patients</p>
+          </div>
+          <div class="impact-card"><span class="impact-emoji">⚡</span>
+            <h4>Reduced Trial & Error</h4>
+            <p>Computational models minimize experimental iterations</p>
+          </div>
+          <div class="impact-card"><span class="impact-emoji">🚀</span>
+            <h4>Faster Translation</h4>
+            <p>Accelerated research-to-clinical implementation</p>
+          </div>
+          <div class="impact-card"><span class="impact-emoji">🧬</span>
+            <h4>Patient-Specific</h4>
+            <p>Plans personalized by individual anatomy and biology</p>
+          </div>
+        </div>
+
+        <div class="cta-strip" data-aos="fade-up">
+          <div>
+            <h3>Advance Your Research Capabilities</h3>
+            <p>Explore how computational methods can enhance your oncology research and clinical outcomes.</p>
+          </div>
+          <a href="#contact" class="btn btn-primary" style="white-space:nowrap;">Collaborate With Us</a>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="pillar-separator"></div>
+
+
+    <!-- ══════════════════════════════════════════════
+     PILLAR 03 — HEALTHCARE ANALYTICS
+══════════════════════════════════════════════ -->
+    <section class="pillar-detail" id="analytics" data-section="Analytics">
+      <div class="container">
+
+        <div class="pillar-detail-hero" data-num="03">
+          <div class="pillar-tag" data-aos="fade">
+            <span class="pillar-num-badge">03</span>
+            <span class="pillar-tag-text">Healthcare Analytics</span>
+          </div>
+          <h2 class="pillar-detail-title" data-aos="fade-up">
+            Smart Analytics for<br><span class="title-accent">Modern Healthcare</span>
+          </h2>
+          <p class="pillar-detail-sub" data-aos="fade-up" data-aos-delay="100">
+            Transforming healthcare data into insights that drive better decisions, efficiency, and innovation across
+            clinical, operational, and research domains.
+          </p>
+        </div>
+
+        <!-- 3D Analytics Visualization -->
+
+        <!-- Overview -->
+        <div class="section-overview" data-aos="fade-up">
+          <div class="overview-inner">
+            <div class="overview-label">Overview</div>
+            <p class="overview-text">
+              We focus on smart analytics, interoperability, and future-ready digital health solutions that optimize
+              care delivery and system intelligence. From predictive maintenance to real-time IoT dashboards, our
+              analytics pillar ensures every data point drives better outcomes.
+            </p>
+          </div>
+        </div>
+
+        <!-- Healthcare Analytics Imagery -->
+
+        <!-- Key Solutions -->
+        <div class="subsection-label" data-aos="fade-up">
+          <h3>Key Solutions</h3>
+        </div>
+
+        <div class="solution-stack">
+
+          <div class="solution-card" data-aos="fade-up">
+            <div class="solution-header">
+              <div class="solution-num">01</div>
+              <h3>Healthcare Data Analytics</h3>
+            </div>
+            <p>Advanced analytics platforms for hospitals and health systems — turning operational data into strategic
+              advantage.</p>
+            <div class="solution-grid">
+              <div class="solution-feature">Equipment utilization analytics</div>
+              <div class="solution-feature">Clinical workflow optimization</div>
+              <div class="solution-feature">Predictive maintenance analytics</div>
+              <div class="solution-feature">Cost, performance, and risk dashboards</div>
+              <div class="solution-feature">KPI tracking and executive reporting</div>
+              <div class="solution-feature">Benchmarking across facility networks</div>
+            </div>
+          </div>
+
+          <div class="solution-card" data-aos="fade-up">
+            <div class="solution-header">
+              <div class="solution-num">02</div>
+              <h3>Digital Health Innovation</h3>
+            </div>
+            <p>Building next-generation tools that improve care delivery and system intelligence through IoT and
+              cloud-native architecture.</p>
+            <div class="solution-grid">
+              <div class="solution-feature">Smart equipment tracking (IoT-enabled)</div>
+              <div class="solution-feature">Real-time system monitoring</div>
+              <div class="solution-feature">Interoperable health data platforms</div>
+              <div class="solution-feature">Secure cloud-based healthcare systems</div>
+              <div class="solution-feature">FHIR-compliant data integration</div>
+              <div class="solution-feature">Edge computing for critical care environments</div>
+            </div>
+          </div>
+
+          <div class="solution-card" data-aos="fade-up">
+            <div class="solution-header">
+              <div class="solution-num">03</div>
+              <h3>Research, Innovation & Strategy</h3>
+            </div>
+            <p>Supporting institutions and startups in health-tech innovation from proof-of-concept through scaled
+              deployment.</p>
+            <div class="solution-grid">
+              <div class="solution-feature">Health-tech R&D support</div>
+              <div class="solution-feature">Clinical research data systems</div>
+              <div class="solution-feature">Innovation prototyping and validation</div>
+              <div class="solution-feature">Technology assessment and scaling</div>
+              <div class="solution-feature">Regulatory strategy consulting</div>
+              <div class="solution-feature">Market entry and go-to-market planning</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Transformative Impact -->
+        <div class="subsection-label" data-aos="fade-up">
+          <h3>Transformative Impact</h3>
+        </div>
+
+        <div class="impact-grid">
+          <div class="impact-card"><span class="impact-emoji">📊</span>
+            <h4>Data-Driven Decisions</h4>
+            <p>Evidence-based healthcare strategy and planning</p>
+          </div>
+          <div class="impact-card"><span class="impact-emoji">💡</span>
+            <h4>Cost Reduction</h4>
+            <p>Optimized operations and resource allocation</p>
+          </div>
+          <div class="impact-card"><span class="impact-emoji">🚀</span>
+            <h4>Accelerated Innovation</h4>
+            <p>Faster implementation of health-tech solutions</p>
+          </div>
+          <div class="impact-card"><span class="impact-emoji">🔗</span>
+            <h4>Interoperability</h4>
+            <p>Seamless data exchange across systems and facilities</p>
+          </div>
+        </div>
+
+        <!-- Unified Vision -->
+        <div class="vision-callout" data-aos="fade-up">
+          <h2>Unified Vision</h2>
+          <p class="lead">Engineering Precision. Intelligent Systems. Better Healthcare.</p>
+          <p>
+            Biomedical Systems ensure <strong>reliability</strong>,
+            Computational Health drives <strong>discovery</strong>,
+            and Healthcare Analytics fuels <strong>innovation</strong> — together
+            forming a complete, future-ready health technology ecosystem.
+          </p>
+        </div>
+
+        <div class="cta-strip" data-aos="fade-up">
+          <div>
+            <h3>Transform Your Healthcare Data</h3>
+            <p>Discover how our analytics solutions can drive efficiency and innovation in your organization.</p>
+          </div>
+          <a href="#contact" class="btn btn-primary" style="white-space:nowrap;">Request Demo</a>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="pillar-separator"></div>
+
+
+    <!-- ══════════════════════════════════════════════
+     PLATFORM
+══════════════════════════════════════════════ -->
+    <section class="platform-section" id="platform" data-section="Platform" style="background:var(--bg-surface);">
+      <div class="container">
+        <div class="platform-content">
+          <div class="platform-text" data-aos="fade-right">
+            <span class="section-tag">Unified Platform</span>
+            <h2 class="section-title" style="text-align:left;font-size:clamp(30px,4vw,46px);">One Ecosystem,<br>Complete
+              Control</h2>
+            <p style="color:var(--text-secondary);line-height:1.8;font-size:15px;margin:20px 0 32px;">
+              Cirqen brings together biomedical engineering, computational research, and analytics into a single,
+              powerful platform that healthcare facilities can trust. Every module talks to every other — no silos, no
+              gaps.
+            </p>
+            <ul class="platform-benefits">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                  <path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                Real-time device monitoring and alerts
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                  <path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                Advanced computational modeling tools
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                  <path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                Comprehensive analytics dashboards
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                  <path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                Seamless regulatory compliance
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                  <path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                Secure, cloud-native architecture
+              </li>
+            </ul>
+          </div>
+
+          <div class="platform-visual" data-aos="fade-left">
+            <div class="dashboard-mockup">
+              <div class="mockup-header">
+                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                <div class="mockup-title">CIRQEN PLATFORM · v2.4.1</div>
+              </div>
+              <div class="mockup-content">
+                <div class="mockup-sidebar">
+                  <div class="sidebar-item active">Dashboard</div>
+                  <div class="sidebar-item">Devices</div>
+                  <div class="sidebar-item">Calibration</div>
+                  <div class="sidebar-item">Simulations</div>
+                  <div class="sidebar-item">Analytics</div>
+                  <div class="sidebar-item">Compliance</div>
+                </div>
+                <div class="mockup-main">
+                  <div class="mockup-card">
+                    <div class="card-title">Device Status — Live</div>
+                    <div class="card-metrics">
+                      <div class="metric-box">
+                        <div class="metric-number">1,247</div>
+                        <div class="metric-label">Active</div>
+                      </div>
+                      <div class="metric-box">
+                        <div class="metric-number">23</div>
+                        <div class="metric-label">Due Soon</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mockup-grid">
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Platform feature grid -->
+        <div class="section-sep" style="margin-top:80px;" data-aos="fade-up">
+          <span class="section-sep-num">— Features</span>
+          <div class="section-sep-line"></div>
+        </div>
+
+        <div class="platform-grid" data-aos="fade-up">
+          <div class="platform-feature">
+            <div class="feature-visual">
+              <div class="feature-icon-large">
+                <svg width="36" height="36" viewBox="0 0 48 48" fill="none">
+                  <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2" opacity="0.3" />
+                  <path d="M24 16V24L28 28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+                  <circle cx="24" cy="24" r="3" fill="currentColor" />
+                </svg>
+              </div>
+            </div>
+            <h3>Real-Time Monitoring</h3>
+            <p>Live dashboards tracking thousands of devices with instant anomaly detection and alert routing.</p>
+          </div>
+          <div class="platform-feature">
+            <div class="feature-visual">
+              <div class="feature-icon-large">
+                <svg width="36" height="36" viewBox="0 0 48 48" fill="none">
+                  <path d="M8 36L16 24L24 30L32 18L40 28" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <rect x="6" y="6" width="36" height="36" rx="3" stroke="currentColor" stroke-width="1.5"
+                    opacity="0.3" />
+                </svg>
+              </div>
+            </div>
+            <h3>Analytics Dashboards</h3>
+            <p>Interactive visualizations turning raw operational data into strategic insights for every level of your
+              organization.</p>
+          </div>
+          <div class="platform-feature">
+            <div class="feature-visual">
+              <div class="feature-icon-large">
+                <svg width="36" height="36" viewBox="0 0 48 48" fill="none">
+                  <rect x="8" y="8" width="32" height="32" rx="3" stroke="currentColor" stroke-width="1.5"
+                    opacity="0.3" />
+                  <path d="M16 24h16M24 16v16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+                  <circle cx="24" cy="24" r="4" fill="currentColor" opacity="0.5" />
+                </svg>
+              </div>
+            </div>
+            <h3>Compliance Engine</h3>
+            <p>Automated compliance tracking, certificate generation, and audit-trail documentation for all major
+              regulatory frameworks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="pillar-separator"></div>
+
+
+    <!-- ══════════════════════════════════════════════
+     ABOUT
+══════════════════════════════════════════════ -->
+    <section class="about-section" id="about" data-section="About">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text" data-aos="fade-up">
+            <span class="section-tag">About Cirqen</span>
+            <h2 class="section-title" style="text-align:left;">Engineering Excellence<br>in Healthcare</h2>
+            <p style="margin-top:24px;">
+              Founded at the intersection of biomedical engineering, computational physics, and data science, Cirqen was
+              created to solve the most complex challenges in modern healthcare technology.
+            </p>
+            <p>
+              Our team combines decades of experience in medical device calibration, radiation oncology research, and
+              healthcare analytics to deliver solutions that improve patient safety and treatment outcomes globally.
+            </p>
+
+            <div class="about-stats">
+              <div class="about-stat">
+                <div class="stat-number">98.7<span>%</span></div>
+                <div class="stat-label">System Uptime</div>
+              </div>
+              <div class="about-stat">
+                <div class="stat-number">4.9<span>/5</span></div>
+                <div class="stat-label">Satisfaction Score</div>
+              </div>
+              <div class="about-stat">
+                <div class="stat-number">24<span>/7</span></div>
+                <div class="stat-label">Support Available</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-visual" data-aos="fade-left">
+            <div class="about-visual-item">
+              <div class="about-visual-dot"></div>
+              <p><strong>Biomedical Precision</strong><br>ISO/IEC-compliant calibration management and device lifecycle
+                tracking across hospital networks.</p>
+            </div>
+            <div class="about-visual-item">
+              <div class="about-visual-dot"></div>
+              <p><strong>Computational Oncology</strong><br>Monte Carlo simulations and AI-driven treatment planning for
+                personalized cancer care.</p>
+            </div>
+            <div class="about-visual-item">
+              <div class="about-visual-dot"></div>
+              <p><strong>Healthcare Analytics</strong><br>Real-time IoT dashboards, predictive maintenance, and
+                FHIR-compliant data interoperability.</p>
+            </div>
+            <div class="about-visual-item">
+              <div class="about-visual-dot"></div>
+              <p><strong>Research & Innovation</strong><br>Supporting health-tech startups and institutions from
+                proof-of-concept to scaled deployment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="pillar-separator"></div>
+
+
+    <!-- ══════════════════════════════════════════════
+     CONTACT
+══════════════════════════════════════════════ -->
+    <section class="contact" id="contact" data-section="Contact">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info" data-aos="fade-right">
+            <span class="section-tag">Get Started</span>
+            <h2 class="section-title" style="text-align:left;font-size:clamp(28px,3.5vw,42px);">Transform
+              Your<br>Healthcare Operations</h2>
+            <p style="color:var(--text-secondary);line-height:1.8;margin:20px 0 32px;font-size:15px;">
+              Join leading healthcare facilities and research institutions using Cirqen to deliver safer, smarter, more
+              innovative patient care.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="item-icon">
+                  <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                    <path
+                      d="M2 6L8.5 10.5C9 10.8 9.5 11 10 11C10.5 11 11 10.8 11.5 10.5L18 6M4 16H16C17 16 18 15 18 14V6C18 5 17 4 16 4H4C3 4 2 5 2 6V14C2 15 3 16 4 16Z"
+                      stroke="currentColor" stroke-width="1.5" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="item-label">Email</div>
+                  <div class="item-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                      data-cfemail="a5cccbc3cae5c6ccd7d4c0cb8bc6cac8">[email&#160;protected]</a></div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="item-icon">
+                  <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                    <path
+                      d="M2 4C2 3.44772 2.44772 3 3 3H6.27924C6.70967 3 7.09181 3.27543 7.22792 3.68377L8.72571 8.17721C8.88307 8.64932 8.66935 9.16531 8.22426 9.38787L6.96701 10.0165C7.56925 11.4612 8.53884 12.4308 9.98354 13.033L10.6121 11.7757C10.8347 11.3306 11.3507 11.1169 11.8228 11.2743L16.3162 12.7721C16.7246 12.9082 17 13.2903 17 13.7208V16C17 17.1046 16.1046 18 15 18H14C7.92487 18 3 13.0751 3 7V4Z"
+                      stroke="currentColor" stroke-width="1.5" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="item-label">Phone</div>
+                  <div class="item-value">+1 (555) 123-4567</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" data-aos="fade-left">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Dr. Jane Smith" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="jane@hospital.org" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="organization">Healthcare Organization</label>
+              <input type="text" id="organization" name="organization" placeholder="Your hospital or institution"
+                required>
+            </div>
+            <div class="form-group">
+              <label for="interest">Area of Interest</label>
+              <select id="interest" name="interest">
+                <option value="">Select a pillar</option>
+                <option value="biomedical">Biomedical Systems</option>
+                <option value="computational">Computational Research</option>
+                <option value="analytics">Healthcare Analytics</option>
+                <option value="all">Full Platform</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell us about your needs</label>
+              <textarea id="message" name="message" rows="4"
+                placeholder="Describe your current challenges or goals..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Request Demo →</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#home" class="logo">
+              <img src="footer.svg" alt="Cirqen Labs" class="logo-img logo-img--footer">
+            </a>
+
+            <p class="footer-desc">Precision biomedical systems, computational oncology research, and healthcare
+              analytics for the future of medicine.</p>
+          </div>
+
+          <div class="footer-links">
+            <div class="link-column">
+              <h4>Platform</h4>
+              <ul>
+                <li><a href="#biomedical">Biomedical Systems</a></li>
+                <li><a href="#computational">Oncology Research</a></li>
+                <li><a href="#analytics">Healthcare Analytics</a></li>
+                <li><a href="#platform">Unified Platform</a></li>
+              </ul>
+            </div>
+            <div class="link-column">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#pillars">Our Pillars</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="link-column">
+              <h4>Resources</h4>
+              <ul>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">API Reference</a></li>
+                <li><a href="#">Support</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; <span id="copyright-year"></span> Cirqen. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Security</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+
+</html>

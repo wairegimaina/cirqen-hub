@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biomedical Systems - Cirqen</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- ── Favicons & PWA ── -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon-512x512.png">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#156a3c">
+    <meta name="msapplication-TileColor" content="#156a3c">
+    <meta name="msapplication-TileImage" content="favicon-144x144.png">
+    <meta name="msapplication-config" content="none">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="mylogo.svg" alt="Cirqen Labs" class="logo-img">
+                </a>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="biomedical.html" class="nav-link active">Biomedical Systems</a></li>
+                    <li><a href="computational.html" class="nav-link">Computational Health</a></li>
+                    <li><a href="analytics.html" class="nav-link">Healthcare Analytics</a></li>
+                    <li><a href="index.html#contact" class="btn-cta">Contact</a></li>
+                </ul>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 60vh; padding: 140px 0 80px;">
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="status-indicator"></span>
+                    <span>Pillar 01</span>
+                </div>
+
+                <h1 class="hero-title" style="font-size: clamp(40px, 6vw, 64px);">
+                    <span class="title-line">Biomedical</span>
+                    <span class="title-line title-accent">Systems</span>
+                </h1>
+
+                <p class="hero-subtitle" style="max-width: 640px;">
+                    Intelligent infrastructure ensuring medical equipment reliability, safety,
+                    and regulatory compliance across healthcare facilities.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section style="padding: 80px 0; background: var(--white);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Overview</span>
+                <h2 class="section-title">Precision Engineering for Healthcare</h2>
+                <p class="section-desc">
+                    We combine engineering precision, automation, and data-driven maintenance to reduce
+                    downtime, extend asset life, and improve patient safety.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Solutions Section -->
+    <section style="padding: 80px 0; background: var(--slate-50);">
+        <div class="container">
+            <h2 style="font-size: clamp(32px, 4vw, 44px); margin-bottom: 60px; text-align: center; color: var(--navy-900);">
+                Core Solutions
+            </h2>
+
+            <div style="display: grid; gap: 48px; max-width: 1000px; margin: 0 auto;">
+                <!-- Solution 1: CMMS -->
+                <div style="background: var(--white); border: 1px solid var(--slate-200); border-radius: 16px; padding: 48px; border-left: 4px solid var(--blue-600);">
+                    <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px;">
+                        <div style="width: 56px; height: 56px; background: var(--navy-800); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: 700;">1</div>
+                        <h3 style="font-size: 28px; color: var(--navy-900); margin: 0;">Computerized Maintenance Management System (CMMS)</h3>
+                    </div>
+
+                    <p style="color: var(--slate-600); line-height: 1.8; margin-bottom: 32px; font-size: 17px;">
+                        A centralized platform for managing biomedical assets throughout their lifecycle.
+                    </p>
+
+                    <h4 style="font-size: 18px; color: var(--navy-800); margin-bottom: 16px; font-weight: 600;">Key Capabilities</h4>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 32px;">
+                        <li style="padding: 12px 0 12px 28px; position: relative; color: var(--slate-600); line-height: 1.6;">
+                            <span style="position: absolute; left: 0; color: var(--blue-600); font-weight: 700;">✓</span>
+                            Asset registration and classification (imaging, lab, ICU, radiotherapy, etc.)
+                        </li>
+                        <li style="padding: 12px 0 12px 28px; position: relative; color: var(--slate-600); line-height: 1.6;">
+                            <span style="position: absolute; left: 0; color: var(--blue-600); font-weight: 700;">✓</span>
+                            Preventive & corrective maintenance scheduling
+                        </li>
+                        <li style="padding: 12px 0 12px 28px; position: relative; color: var(--slate-600); line-height: 1.6;">
+                            <span style="position: absolute; left: 0; color: var(--blue-600); font-weight: 700;">✓</span>
+                            Automated work orders and technician assignment
+                        </li>
+                        <li style="padding: 12px 0 12px 28px; position: relative; color: var(--slate-600); line-height: 1.6;">
+                            <span style="position: absolute; left: 0; color: var(--blue-600); font-weight: 700;">✓</span>
+                            Spare parts and inventory tracking
+                        </li>
+                        <li style="padding: 12px 0 12px 28px; position: relative; color: var(--slate-600); line-height: 1.6;">
+                            <span style="position: absolute; left: 0; color: var(--blue-600); font-weight: 700;">✓</span>
+                            Downtime analysis and failure trend monitoring
+                        </li>
+                        <li style="padding: 12px 0 12px 28px; position: relative; color: var(--slate-600); line-height: 1.6;">
+                            <span style="position: absolute; left: 0; color: var(--blue-600); font-weight: 700;">✓</span>
+                            Compliance-ready maintenance records (ISO, IEC, WHO, hospital audits)
+                        </li>
+                    </ul>
+
+                    <div style="background: var(--blue-50); padding: 24px; border-radius: 12px; border-left: 3px solid var(--blue-600);">
+                        <h5 style="font-size: 16px; color: var(--navy-900); margin-bottom: 12px; font-weight: 600;">Impact</h5>
+                        <p style="color: var(--slate-700); line-height: 1.7; margin: 0;">
+                            • Reduced equipment downtime<br>
+                            • Improved technician efficiency<br>
+                            • Full traceability for audits and accreditation
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Solution 2: Calibration -->
+                <div style="background: var(--white); border: 1px solid var(--slate-200); border-radius: 16px; padding: 48px; border-left: 4px solid var(--blue-600);">
+                    <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px;">
+                        <div style="width: 56px; height: 56px; background: var(--navy-800); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: 700;">2</div>
+                        <h3 style="font-size: 28px; color: var(--navy-900); margin: 0;">Calibration & Quality Assurance System</h3>
+                    </div>
+
+                    <p style="color: var(--slate-600); line-height: 1.8; margin-bottom: 32px; font-size: 17px;">
+                        A digital calibration management system designed for precision-critical medical devices.
+                    </p>
+
+                    <h4 style="font-size: 18px; color: var(--navy-800); margin-bottom: 16px; font-weight: 600;">Key Capabilities</h4>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 32px;">
+                        <li style="padding: 12px 0 12px 28px; position: relative; color: var(--slate-600); line-height: 1.6;">
+                            <span style="position: absolute; left: 0; color: var(--blue-600); font-weight: 700;">✓</span>
+                            Calibration scheduling and reminders
+                        </li>
+                        <li style="padding: 12px 0 12px 28px; position: relative; color: var(--slate-600); line-height: 1.6;">
+                            <span style="position: absolute; left: 0; color: var(--blue-600); font-weight: 700;">✓</span>
+                            Digital calibration certificates and traceability
+                        </li>
+                        <li style="padding: 12px 0 12px 28px; position: relative; color: var(--slate-600); line-height: 1.6;">
+                            <span style="position: absolute; left: 0; color: var(--blue-600); font-weight: 700;">✓</span>
+                            Measurement uncertainty tracking
+                        </li>
+                        <li style="padding: 12px 0 12px 28px; position: relative; color: var(--slate-600); line-height: 1.6;">
+                            <span style="position: absolute; left: 0; color: var(--blue-600); font-weight: 700;">✓</span>
+                            Instrument reference hierarchy (master → working standards)
+                        </li>
+                        <li style="padding: 12px 0 12px 28px; position: relative; color: var(--slate-600); line-height: 1.6;">
+                            <span style="position: absolute; left: 0; color: var(--blue-600); font-weight: 700;">✓</span>
+                            Compliance with ISO 17025 and hospital QA requirements
+                        </li>
+                    </ul>
+
+                    <div style="background: var(--blue-50); padding: 24px; border-radius: 12px; border-left: 3px solid var(--blue-600);">
+                        <h5 style="font-size: 16px; color: var(--navy-900); margin-bottom: 12px; font-weight: 600;">Impact</h5>
+                        <p style="color: var(--slate-700); line-height: 1.7; margin: 0;">
+                            • Accurate diagnostics and treatments<br>
+                            • Reduced clinical risk<br>
+                            • Strong regulatory compliance
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who It Serves Section -->
+    <section style="padding: 80px 0; background: var(--white);">
+        <div class="container">
+            <h2 style="font-size: clamp(32px, 4vw, 44px); margin-bottom: 48px; text-align: center; color: var(--navy-900);">
+                Who It Serves
+            </h2>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; max-width: 900px; margin: 0 auto;">
+                <div style="background: var(--slate-50); padding: 32px; border-radius: 12px; text-align: center; border: 1px solid var(--slate-200);">
+                    <div style="width: 64px; height: 64px; background: var(--navy-800); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; color: white; font-size: 28px;">🏥</div>
+                    <h4 style="font-size: 18px; color: var(--navy-900); margin-bottom: 8px;">Hospitals & Clinics</h4>
+                    <p style="color: var(--slate-600); font-size: 14px; line-height: 1.6; margin: 0;">Complete asset lifecycle management</p>
+                </div>
+
+                <div style="background: var(--slate-50); padding: 32px; border-radius: 12px; text-align: center; border: 1px solid var(--slate-200);">
+                    <div style="width: 64px; height: 64px; background: var(--navy-800); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; color: white; font-size: 28px;">🔬</div>
+                    <h4 style="font-size: 18px; color: var(--navy-900); margin-bottom: 8px;">Diagnostic Centers</h4>
+                    <p style="color: var(--slate-600); font-size: 14px; line-height: 1.6; margin: 0;">Precision calibration systems</p>
+                </div>
+
+                <div style="background: var(--slate-50); padding: 32px; border-radius: 12px; text-align: center; border: 1px solid var(--slate-200);">
+                    <div style="width: 64px; height: 64px; background: var(--navy-800); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; color: white; font-size: 28px;">🧪</div>
+                    <h4 style="font-size: 18px; color: var(--navy-900); margin-bottom: 8px;">Research Labs</h4>
+                    <p style="color: var(--slate-600); font-size: 14px; line-height: 1.6; margin: 0;">Advanced quality assurance</p>
+                </div>
+
+                <div style="background: var(--slate-50); padding: 32px; border-radius: 12px; text-align: center; border: 1px solid var(--slate-200);">
+                    <div style="width: 64px; height: 64px; background: var(--navy-800); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; color: white; font-size: 28px;">⚕️</div>
+                    <h4 style="font-size: 18px; color: var(--navy-900); margin-bottom: 8px;">Equipment Vendors</h4>
+                    <p style="color: var(--slate-600); font-size: 14px; line-height: 1.6; margin: 0;">Service management platforms</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="padding: 80px 0; background: linear-gradient(165deg, var(--navy-900) 0%, var(--navy-700) 100%);">
+        <div class="container" style="text-align: center;">
+            <h2 style="font-size: clamp(32px, 4vw, 44px); color: white; margin-bottom: 24px;">
+                Ready to Optimize Your Biomedical Systems?
+            </h2>
+            <p style="font-size: 18px; color: rgba(255,255,255,0.8); margin-bottom: 32px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Let's discuss how our solutions can improve your equipment reliability and compliance.
+            </p>
+            <a href="index.html#contact" class="btn btn-primary">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="border: none; padding-top: 0;">
+                <p>&copy; 2025 Cirqen. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

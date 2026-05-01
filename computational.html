@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computational Health & Oncology Research - Cirqen</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- ── Favicons & PWA ── -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon-512x512.png">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#156a3c">
+    <meta name="msapplication-TileColor" content="#156a3c">
+    <meta name="msapplication-TileImage" content="favicon-144x144.png">
+    <meta name="msapplication-config" content="none">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="mylogo.svg" alt="Cirqen Labs" class="logo-img">
+                </a>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="biomedical.html" class="nav-link">Biomedical Systems</a></li>
+                    <li><a href="computational.html" class="nav-link active">Computational Health</a></li>
+                    <li><a href="analytics.html" class="nav-link">Healthcare Analytics</a></li>
+                    <li><a href="index.html#contact" class="btn-cta">Contact</a></li>
+                </ul>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 60vh; padding: 140px 0 80px;">
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="status-indicator"></span>
+                    <span>Pillar 02</span>
+                </div>
+
+                <h1 class="hero-title" style="font-size: clamp(40px, 6vw, 64px);">
+                    <span class="title-line">Computational Health &</span>
+                    <span class="title-line title-accent">Oncology Research</span>
+                </h1>
+
+                <p class="hero-subtitle" style="max-width: 640px;">
+                    Applying advanced computation, modeling, and AI to improve disease understanding,
+                    diagnosis, and treatment—particularly in oncology.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section style="padding: 80px 0; background: var(--white);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Overview</span>
+                <h2 class="section-title">Bridging Physics, Biology & Data Science</h2>
+                <p class="section-desc">
+                    We bridge physics, biology, and data science to support evidence-based and precision medicine.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Focus Areas Section -->
+    <section style="padding: 80px 0; background: var(--slate-50);">
+        <div class="container">
+            <h2 style="font-size: clamp(32px, 4vw, 44px); margin-bottom: 60px; text-align: center; color: var(--navy-900);">
+                Key Focus Areas
+            </h2>
+
+            <div style="display: grid; gap: 48px; max-width: 1000px; margin: 0 auto;">
+                <!-- Focus Area 1: Computational Oncology -->
+                <div style="background: var(--white); border: 1px solid var(--slate-200); border-radius: 16px; padding: 48px; border-left: 4px solid var(--blue-600);">
+                    <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px;">
+                        <div style="width: 56px; height: 56px; background: var(--navy-800); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: 700;">1</div>
+                        <h3 style="font-size: 28px; color: var(--navy-900); margin: 0;">Computational Oncology</h3>
+                    </div>
+
+                    <p style="color: var(--slate-600); line-height: 1.8; margin-bottom: 32px; font-size: 17px;">
+                        Using mathematical models and machine learning to analyze cancer behavior and treatment outcomes.
+                    </p>
+
+                    <h4 style="font-size: 18px; color: var(--navy-800); margin-bottom: 16px; font-weight: 600;">Innovative Applications</h4>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 0;">
+                        <li style="padding: 12px 0 12px 28px; position: relative; color: var(--slate-600); line-height: 1.6;">
+                            <span style="position: absolute; left: 0; color: var(--blue-600); font-weight: 700;">✓</span>
+                            Tumor growth and response modeling
+                        </li>
+                        <li style="padding: 12px 0 12px 28px; position: relative; color: var(--slate-600); line-height: 1.6;">
+                            <span style="position: absolute; left: 0; color: var(--blue-600); font-weight: 700;">✓</span>
+                            Radiotherapy dose optimization and simulation
+                        </li>
+                        <li style="padding: 12px 0 12px 28px; position: relative; color: var(--slate-600); line-height: 1.6;">
+                            <span style="position: absolute; left: 0; color: var(--blue-600); font-weight: 700;">✓</span>
+                            Predictive modeling for treatment outcomes
+                        </li>
+                        <li style="padding: 12px 0 12px 28px; position: relative; color: var(--slate-600); line-height: 1.6;">
+                            <span style="position: absolute; left: 0; color: var(--blue-600); font-weight: 700;">✓</span>
+                            Personalized treatment planning using patient data
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Focus Area 2: Medical Physics -->
+                <div style="background: var(--white); border: 1px solid var(--slate-200); border-radius: 16px; padding: 48px; border-left: 4px solid var(--blue-600);">
+                    <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px;">
+                        <div style="width: 56px; height: 56px; background: var(--navy-800); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: 700;">2</div>
+                        <h3 style="font-size: 28px; color: var(--navy-900); margin: 0;">Medical Physics & Simulation</h3>
+                    </div>
+
+                    <p style="color: var(--slate-600); line-height: 1.8; margin-bottom: 32px; font-size: 17px;">
+                        Physics-based computational tools supporting clinical and research environments.
+                    </p>
+
+                    <h4 style="font-size: 18px; color: var(--navy-800); margin-bottom: 16px; font-weight: 600;">Capabilities</h4>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 0;">
+                        <li style="padding: 12px 0 12px 28px; position: relative; color: var(--slate-600); line-height: 1.6;">
+                            <span style="position: absolute; left: 0; color: var(--blue-600); font-weight: 700;">✓</span>
+                            Monte Carlo simulations for radiation transport
+                        </li>
+                        <li style="padding: 12px 0 12px 28px; position: relative; color: var(--slate-600); line-height: 1.6;">
+                            <span style="position: absolute; left: 0; color: var(--blue-600); font-weight: 700;">✓</span>
+                            Imaging system performance modeling
+                        </li>
+                        <li style="padding: 12px 0 12px 28px; position: relative; color: var(--slate-600); line-height: 1.6;">
+                            <span style="position: absolute; left: 0; color: var(--blue-600); font-weight: 700;">✓</span>
+                            Dosimetry analysis and verification
+                        </li>
+                        <li style="padding: 12px 0 12px 28px; position: relative; color: var(--slate-600); line-height: 1.6;">
+                            <span style="position: absolute; left: 0; color: var(--blue-600); font-weight: 700;">✓</span>
+                            Optimization of imaging and therapy protocols
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Focus Area 3: AI-Driven Insights -->
+                <div style="background: var(--white); border: 1px solid var(--slate-200); border-radius: 16px; padding: 48px; border-left: 4px solid var(--blue-600);">
+                    <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px;">
+                        <div style="width: 56px; height: 56px; background: var(--navy-800); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: 700;">3</div>
+                        <h3 style="font-size: 28px; color: var(--navy-900); margin: 0;">AI-Driven Clinical Insights</h3>
+                    </div>
+
+                    <p style="color: var(--slate-600); line-height: 1.8; margin-bottom: 32px; font-size: 17px;">
+                        Transforming complex medical data into actionable intelligence.
+                    </p>
+
+                    <h4 style="font-size: 18px; color: var(--navy-800); margin-bottom: 16px; font-weight: 600;">Technologies</h4>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 0;">
+                        <li style="padding: 12px 0 12px 28px; position: relative; color: var(--slate-600); line-height: 1.6;">
+                            <span style="position: absolute; left: 0; color: var(--blue-600); font-weight: 700;">✓</span>
+                            Machine learning for pattern recognition
+                        </li>
+                        <li style="padding: 12px 0 12px 28px; position: relative; color: var(--slate-600); line-height: 1.6;">
+                            <span style="position: absolute; left: 0; color: var(--blue-600); font-weight: 700;">✓</span>
+                            Predictive analytics for disease progression
+                        </li>
+                        <li style="padding: 12px 0 12px 28px; position: relative; color: var(--slate-600); line-height: 1.6;">
+                            <span style="position: absolute; left: 0; color: var(--blue-600); font-weight: 700;">✓</span>
+                            Clinical decision support systems
+                        </li>
+                        <li style="padding: 12px 0 12px 28px; position: relative; color: var(--slate-600); line-height: 1.6;">
+                            <span style="position: absolute; left: 0; color: var(--blue-600); font-weight: 700;">✓</span>
+                            Research-grade data pipelines
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section style="padding: 80px 0; background: var(--white);">
+        <div class="container">
+            <h2 style="font-size: clamp(32px, 4vw, 44px); margin-bottom: 48px; text-align: center; color: var(--navy-900);">
+                Clinical Impact
+            </h2>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; max-width: 1000px; margin: 0 auto;">
+                <div style="background: linear-gradient(135deg, var(--slate-50) 0%, var(--blue-50) 100%); padding: 40px; border-radius: 16px; text-align: center; border: 1px solid var(--blue-200);">
+                    <div style="font-size: 48px; margin-bottom: 16px;">🎯</div>
+                    <h4 style="font-size: 20px; color: var(--navy-900); margin-bottom: 12px; font-weight: 600;">Precision Treatments</h4>
+                    <p style="color: var(--slate-600); line-height: 1.7; margin: 0;">More precise cancer treatments tailored to individual patients</p>
+                </div>
+
+                <div style="background: linear-gradient(135deg, var(--slate-50) 0%, var(--blue-50) 100%); padding: 40px; border-radius: 16px; text-align: center; border: 1px solid var(--blue-200);">
+                    <div style="font-size: 48px; margin-bottom: 16px;">⚡</div>
+                    <h4 style="font-size: 20px; color: var(--navy-900); margin-bottom: 12px; font-weight: 600;">Reduced Trial & Error</h4>
+                    <p style="color: var(--slate-600); line-height: 1.7; margin: 0;">Computational models minimize experimental iterations</p>
+                </div>
+
+                <div style="background: linear-gradient(135deg, var(--slate-50) 0%, var(--blue-50) 100%); padding: 40px; border-radius: 16px; text-align: center; border: 1px solid var(--blue-200);">
+                    <div style="font-size: 48px; margin-bottom: 16px;">🚀</div>
+                    <h4 style="font-size: 20px; color: var(--navy-900); margin-bottom: 12px; font-weight: 600;">Faster Translation</h4>
+                    <p style="color: var(--slate-600); line-height: 1.7; margin: 0;">Accelerated research-to-clinical implementation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="padding: 80px 0; background: linear-gradient(165deg, var(--navy-900) 0%, var(--navy-700) 100%);">
+        <div class="container" style="text-align: center;">
+            <h2 style="font-size: clamp(32px, 4vw, 44px); color: white; margin-bottom: 24px;">
+                Advance Your Research Capabilities
+            </h2>
+            <p style="font-size: 18px; color: rgba(255,255,255,0.8); margin-bottom: 32px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Explore how computational methods can enhance your oncology research and clinical outcomes.
+            </p>
+            <a href="index.html#contact" class="btn btn-primary">Collaborate With Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="border: none; padding-top: 0;">
+                <p>&copy; 2025 Cirqen. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
